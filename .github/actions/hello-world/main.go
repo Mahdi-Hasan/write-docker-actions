@@ -1,20 +1,24 @@
 package main
 
-import(
+import (
     "fmt"
     "os"
 )
 
 func main() {
-    firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
-    secondGreeting := os.Getenv("INPUT_SECONDGREETING")
-    pathOfGreating := os.Getenv("INPUT_THIRDGREETING")
-    
-    fmt.Println("Hello First" + firstGreeting)
-    fmt.Println("Path1 " + secondGreeting)
-    fmt.Println("Path2 " + pathOfGreating)
-    
-    if secondGreeting != "" {
-    fmt.Println("Hello " + secondGreeting)
+
+// Access Inputs as environment vars
+firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
+secondGreeting := os.Getenv("INPUT_SECONDGREETING")
+thirdGreeting := os.Getenv("INPUT_THIRDGREETING")
+
+// Use those inputs in the actions logic
+fmt.Println("Hello " + firstGreeting)
+fmt.Println("Hello " + secondGreeting)
+
+// Someimes inputs are not "required" and we can build around that
+if thirdGreeting != "" {
+    fmt.Println("Hello " + thirdGreeting)
     }
+
 }
