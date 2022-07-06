@@ -25,3 +25,5 @@ jobs:
         run: echo Hello, world!
       - name: custom action 
         uses: ./.github/actions/hello-world
+        with
+          pathOfGreeting: "/.github/actions/hello-world/Action"
