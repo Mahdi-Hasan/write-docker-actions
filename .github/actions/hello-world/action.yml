@@ -1,0 +1,6 @@
+name: "custom-action"
+description: "my first custom action"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
