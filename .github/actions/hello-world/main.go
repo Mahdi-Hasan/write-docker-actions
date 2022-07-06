@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import{
+    "fmt"
+    "os"
+}
 
 func main() {
-    fmt.Println("Hello Docker Actions")
+    firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
+    secondGreeting := os.Getenv("INPUT_SECONDGREETING")
+    pathOfGreating := os.Getenv("INPUT_PathOfGreating")
+    
+    fmt.Println("Hello " + firstGreeting)
+    fmt.Println("Path " + pathOfGreating)
+    
+    if secondGreeting != "" {
+    fmt.Println("Hello " + secondGreeting)
+    }
 }
