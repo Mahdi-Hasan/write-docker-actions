@@ -6,13 +6,14 @@ inputs:
     description:  "Who would you like to greet in the console"
     required: true
     default:  "Mahdi"
-  secondGreeting:
-    description:  "another person to greet"
-    required: false
   pathOfGreating:
     description:  "path for greating"
     required: true
-    default:  ".github/actions/hello-world/"
+    default:  ".github/actions/hello-world/default"
+  secondGreeting:
+    description:  "another person to greet"
+    required: false
+
 runs:
   using: "docker"
   image: "Dockerfile"
