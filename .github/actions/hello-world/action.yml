@@ -8,10 +8,10 @@ inputs:
     required: true
     default: "Mahdi"
 
-  pathOfGreetingg:
+  pathOfGreeting:
     description: "path to greet"
     required: true
-    default: "github/action/hello"
+    default: ".github/action/hello-world"
 
   thirdGreeting:
     description: "a third greeting"
