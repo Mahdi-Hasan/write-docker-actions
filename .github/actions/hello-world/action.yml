@@ -8,7 +8,7 @@ inputs:
     required: true
     default: "Mahdi"
 
-  secondGreeting:
+  secondGreetingg:
     description: "another person to greet"
     required: true
     default: "github/action/hello"
