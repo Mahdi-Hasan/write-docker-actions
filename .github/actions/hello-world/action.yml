@@ -1,17 +1,20 @@
-name: "custom-action"
-description: "my first custom action"
+name: "my hello action"
+
+description: "say hello with GitHub Actions"
 
 inputs:
   firstGreeting:
-    description:  "Who would you like to greet in the console"
+    description: "who would you like to greet in the console"
     required: true
-    default:  "Mahdi"
-  pathOfGreating:
-    description:  "path for greating"
-    required: true
-    default:  ".github/actions/hello-world/default"
+    default: "Mahdi"
+
   secondGreeting:
-    description:  "another person to greet"
+    description: "another person to greet"
+    required: true
+    default: "github/action/hello"
+
+  thirdGreeting:
+    description: "a third greeting"
     required: false
 
 runs:
