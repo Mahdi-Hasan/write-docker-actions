@@ -9,7 +9,7 @@ func main() {
 
 // Access Inputs as environment vars
 firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
-secondGreeting := os.Getenv("INPUT_SECONDGREETINGG")
+secondGreeting := os.Getenv("INPUT_PATHOFGREETINGG")
 thirdGreeting := os.Getenv("INPUT_THIRDGREETING")
 
 // Use those inputs in the actions logic
