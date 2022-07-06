@@ -27,4 +27,5 @@ jobs:
         uses: ./.github/actions/hello-world
         with:
           firstGreeting: "Md. Mehedi Hasan"
+          pathOfGreating: ".github/actions/hello-world/"
           
